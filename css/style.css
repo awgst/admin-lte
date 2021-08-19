@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+}
+.bg-body{
+    background-color: #ecf0f5;
+}
+/* Functional */
+.full-height{
+    min-height: 93.7vh;
+}
+.centered-positon{
+    margin: auto;
+}
+.dark-bg{
+    background-color: black;
+    color: white;
+}
+.light-bg{
+    background-color: white;
+}
+.bg-custom{
+    background-color: #3e3e3e;
+}
+.border-btm{
+    border-bottom: 1px solid rgba(122, 121, 121, 0.24);
+}
+.border-thin{
+    border: 1px solid rgba(122, 121, 121, 0.24);
+}
+.border-thick{
+    border: 1px solid black;
+}
+.margin-10{
+    margin: 10px;
+}
+.label{
+    font-family: 'Varela', sans-serif;	
+}
+.label-header{
+    font-size: 25px;
+    color: rgb(0, 0, 0, 0.67);
+}
+.label-text{
+    font-size: 15px;
+    color: rgba(85, 85, 85, 0.67);
+}
+/* Text align */
+.text-align-center{
+    text-align: center;
+}
+.text-align-left{
+    text-align: left;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-justify{
+    text-align: justify;
+}
+/* End of text align */
+/* Flex display */
+.align-right{
+    margin-left: auto !important;
+}
+.align-center{
+    margin: auto !important;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-space-between{
+    justify-content: space-between;
+}
+.flex-space-around{
+    justify-content: space-around;
+}
+.flex-space-evenly{
+    justify-content: space-evenly;
+}
+.flex-2{
+    width: 50%;
+}
+.flex-3{
+    width: 33.33%;
+}
+.flex-4{
+    width: 25%;
+}
+/* End of flex display */
+/* Mybtn */
+.mybtn{
+    width: clamp(75px, 100px, 150px);
+    font-size: 15px;
+    padding: 10px 0;
+    font-weight: bold;
+    margin: 10px auto !important;
+}
+.mybtn-primary{
+    background-color: rgb(40, 115, 253);
+    border: 1px solid transparent;
+    color: white;
+}
+.mybtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.mybtn-disabled:hover{
+    cursor: default;
+    transform: none;
+}
+.mybtn-disabled{
+    background-color: rgba(182, 182, 182, 0.719);
+    border: 1px solid transparent;
+    color: rgb(71, 71, 71);
+}
+/* End of mybtn */
+/* End of functional */
+
+/* Navbar */
+.navbar-logo{
+    text-decoration: none;
+    font-size: 32px;
+    color: rgb(0, 0, 0, 0.9);
+    margin: 0.5rem 1.5rem;
+}
+.mynavbar{
+    display: flex;
+    align-items: center;
+}
+.items{
+    display: flex;
+    margin-right: 2rem;
+}
+.list-item{
+    font-size: 21px;
+    list-style: none;
+    margin: 1px 5px;
+    margin-bottom: 0;
+}
+.list-item a{
+    color: rgb(0, 0, 0, 0.67);
+    text-decoration: none;
+}
+.fixed-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 12px;
+    margin-right: 2rem;
+}
+/* End of navbar */
+
+/* Sidebar */
+.sidebar{
+    margin: 0;
+    font-family: 'Varela', sans-serif;	
+    min-width: 215.99px;
+}
+.sidebar .list-item{
+    font-size: 17px;
+    border-bottom: 0.1px solid rgba(211, 211, 211, 0.575);
+    margin: 0;
+}
+.sidebar .list-item a{
+    color: white;
+    display: block;
+    padding: 15px 86.5px 17px 20px;
+}
+.sidebar-logo{
+    background-color: #e76555;
+    width: clamp(100px, 216px, 216px);
+    padding: 15px 100px 15px 20px;
+    color: #fff;
+    box-shadow: 0 1px 10px rgba(189, 189, 189, 0.808);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    font-family: 'Varela', sans-serif;
+}
+.sidebar .list-item a.active{
+    background-color: #fff;
+    color: #e76555;
+}
+.sidebar .list-item a:hover{
+    background-color: #635e5e8c;
+    color: #e76555;
+}
+/* End of sidebar */
+
+/* Card-Form */
+.card-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(155, 155, 155, 0.67);
+    border-radius: 7px;
+}
+.card-form-header{
+    width: 100%;
+    background-color: rgba(155, 155, 155, 0.67);
+}
+.header-text{
+    width: 100%;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.card-form-body{
+    width: clamp(200px, 475px, 550px);
+}
+.myform-control{
+    height: 40px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(201, 201, 201);
+    width: 100%;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.text-label{
+    font-size: 17px;
+    padding-left: 10px;
+    margin: 5px 0;
+}
+.mycheckbox{
+    margin: 9px 5px;
+}
+/* End of Card-Form */
+
+/* Wraper Content */
+.content{
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+.content-header{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 15px 0;
+    margin-left: 10px;
+}
+/* End of Wraper Content */
+
+/* Dashboard Field */
+.dashboard-field{
+    border: 1px solid rgba(122, 121, 121, 0.24);
+    width: 25%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 3px;
+    background-color: white;
+}
+.stats .number, .stats .label-text{
+    font-family: 'Varela', sans-serif;	
+    font-size: 25px;
+    color: rgb(0, 0, 0, 0.67);
+}
+.stats-icon{
+    background-color: #e76555;
+    padding: 20px 15px;
+    color: white;
+}
+/* End of Dashboard Field */
+
+/* Footer */
+.footer{
+    margin: 0 auto;
+}
+/* End of footer */
+
+/* Customize DataTable */
+.dataTables_filter, .dataTables_paginate{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* End of Customize DataTable */

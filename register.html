@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Register Page</title>
+</head>
+<body class="flex-column flex-space-between">
+    <div class="header">
+        <nav class="mynavbar">
+            <a href="#" class="navbar-logo">Register</a>
+            <ul class="items align-right">
+                <li class="list-item">
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="centered-positon">
+        <div class="card-form">
+            <div class="card-form-header">
+                <h1 class="header-text text-align-center">
+                    Register
+                </h1>
+            </div>
+            <div class="card-form-body">
+                <form action="" class="myform">
+                    <label for="name" class="text-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name" class="myform-control">
+                    <label for="email" class="text-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" class="myform-control">
+                    <label for="password" class="text-label">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" class="myform-control">
+                    <label for="password" class="text-label">Confirm Password</label>
+                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm Password" class="myform-control">
+                    <div class="flex-row">
+                        <input type="checkbox" name="remember" class="mycheckbox" id="checkbox">
+                        <label for="remember" class="text-label"><a href="">I agree to the company terms and conditions</a></label>
+                    </div>
+                    <button class="mybtn mybtn-primary align-center mybtn-disabled" id="button" disabled>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer centered-positon">
+        <p class="footer-text">Copyright&copy;2021</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
